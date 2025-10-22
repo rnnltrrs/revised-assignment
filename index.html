@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Marci Metzger Home</title>
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="src/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<!-- ===== LOADER ===== -->
+		<div id="loader">
+			<img src="images/logo.png" alt="Logo" class="loader-logo" />
+		</div>
+
+		<!-- ===== NAVIGATION BAR ===== -->
+		<nav class="navbar">
+			<div class="logo">
+				<a href="/"><img src="images/logo.png" alt="Marci Metzger Homes" /></a>
+			</div>
+			<!-- FOR MOBILE VERSION -->
+			<div class="menu-toggle" id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- LINKS  -->
+			<div class="nav-links" id="nav-links">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#testimonials">Testimonial</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ===== BANNER SECTION ===== -->
+		<div class="banner">
+			<div class="banner-video">
+				<video autoplay muted loop playsinline>
+					<source src="banner.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="banner-text">
+				<h1>MARCI METZGER</h1>
+				<h2>THE RIDGE REALTY GROUP</h2>
+				<p>
+					Your Trusted Pahrump Realtor – Guiding You Home with Expertise and
+					Care
+				</p>
+				<a href="/">Call Now</a>
+			</div>
+		</div>
+
+		<!-- ===== ABOUT SECTION ===== -->
+		<section class="about-section" id="about">
+			<h2>About Our Work</h2>
+			<div class="about-row">
+				<div class="about-image">
+					<img
+						src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+						alt="Top Sales"
+					/>
+				</div>
+				<div class="about-text">
+					<h3>Top Residential Sales – Last 5 Years</h3>
+					<p>
+						We’re proud to have helped nearly 90 clients in 2021 and closed over
+						$28.5 million in sales! At The Ridge Realty Group, we work hard
+						every day to grow, learn, and elevate our standards—because our
+						clients deserve nothing less than our very best.
+					</p>
+				</div>
+			</div>
+			<div class="about-row reverse">
+				<div class="about-image">
+					<img
+						src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+						alt="Get it Sold"
+					/>
+				</div>
+				<div class="about-text">
+					<h3>Don’t Just List It... Get It SOLD!</h3>
+					<p>
+						We market every property strategically, using every platform and
+						connection to put your home in front of the right buyers—and get you
+						top dollar for your property.
+					</p>
+				</div>
+			</div>
+			<div class="about-row">
+				<div class="about-image">
+					<img
+						src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=800&q=80"
+						alt="Guide to Buyers"
+					/>
+				</div>
+				<div class="about-text">
+					<h3>Guide to Buyers</h3>
+					<p>
+						Nobody knows the Pahrump market like we do. Enjoy having a local
+						expert by your side—offering detailed market analysis, upgrade
+						suggestions, trusted contractor referrals, and personalized support
+						from start to finish.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICES SECTION ===== -->
+		<section class="services-section" id="services">
+			<h1>Our Services</h1>
+			<div class="services-grid">
+				<div class="service-card">
+					<img
+						src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/solid/home.svg"
+						alt="House Icon"
+						width="50"
+						height="50"
+					/>
+					<h3>Interior Design</h3>
+					<p>We create elegant, functional spaces that reflect your style.</p>
+				</div>
+				<div class="service-card">
+					<img
+						src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/solid/building-office.svg"
+						alt="Building Icon"
+						width="50"
+						height="50"
+					/>
+					<h3>Renovation</h3>
+					<p>Transform your home with expert renovation solutions.</p>
+				</div>
+				<div class="service-card">
+					<img
+						src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/solid/building-office.svg"
+						alt="Building Icon"
+						width="50"
+						height="50"
+					/>
+					<h3>Consultation</h3>
+					<p>Professional advice to plan your perfect living space.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SEARCH FEATURE ===== -->
+		<section class="property-search">
+			<h2>Find the Best Place</h2>
+			<form class="search-form">
+				<div class="form-group">
+					<label for="type">Looking for</label>
+					<select id="type" name="type">
+						<option value="any">Any</option>
+						<option value="house">House</option>
+						<option value="apartment">Apartment</option>
+						<option value="villa">Villa</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="price">Price</label>
+					<select id="price" name="price">
+						<option value="any">Any</option>
+						<option value="0-500">0 - 500</option>
+						<option value="500-1000">500 - 1000</option>
+						<option value="1000-2000">1000+</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="location">Location</label>
+					<select id="location" name="location">
+						<option value="any">Any</option>
+						<option value="pahrump">Pahrump</option>
+						<option value="las-vegas">Las Vegas</option>
+						<option value="reno">Reno</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="rooms">Number of Rooms</label>
+					<select id="rooms" name="rooms">
+						<option value="any">Any</option>
+						<option value="1">1 Bedroom</option>
+						<option value="2">2 Bedrooms</option>
+						<option value="3">3 Bedrooms</option>
+						<option value="4+">4+ Bedrooms</option>
+					</select>
+				</div>
+				<button type="submit" class="search-btn">Search Properties</button>
+			</form>
+		</section>
+
+		<!-- ===== GALLERY SECTION ===== -->
+		<section class="featured-properties">
+			<div class="container">
+				<h2>Featured Properties</h2>
+				<p class="tagline">Handpicked Homes for Your Dream Living</p>
+				<div class="properties-grid">
+					<!-- Property 1 -->
+					<div class="property-card">
+						<img
+							src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/540503361.jpg?k=0ccca474a98e3e5fda1531cd0594224fce8cb53acbfeb4e93943393c53449ff7&o=&hp=1"
+							alt="Modern Villa"
+						/>
+						<div class="property-info">
+							<h3>Modern Villa</h3>
+							<p>
+								Beautiful 3-bedroom villa with a spacious garden and modern
+								amenities.
+							</p>
+							<span class="price">$350,000</span>
+						</div>
+					</div>
+					<!-- Property 2 -->
+					<div class="property-card">
+						<img
+							src="https://www.viprealtyca.com/uploads/LA%20luxury%20apartments.jpeg"
+							alt="Luxury Apartment"
+						/>
+						<div class="property-info">
+							<h3>Luxury Apartment</h3>
+							<p>
+								High-rise apartment with stunning city views and premium
+								interiors.
+							</p>
+							<span class="price">$220,000</span>
+						</div>
+					</div>
+					<!-- Property 3 -->
+					<div class="property-card">
+						<img
+							src="https://i.ytimg.com/vi/GV4PFB-8VlA/maxresdefault.jpg"
+							alt="Cozy Cottage"
+						/>
+						<div class="property-info">
+							<h3>Cozy Cottage</h3>
+							<p>
+								Charming cottage perfect for a peaceful countryside retreat.
+							</p>
+							<span class="price">$180,000</span>
+						</div>
+					</div>
+					<!-- Property 4 -->
+					<div class="property-card">
+						<img
+							src="https://www.thehousedesigners.com/images/plans/01/AMD/bulk/6655/1269a-front-rendering_m.webp"
+							alt="Modern House"
+						/>
+						<div class="property-info">
+							<h3>Modern House</h3>
+							<p>
+								Spacious modern house with a beautiful backyard and open floor
+								plan.
+							</p>
+							<span class="price">$400,000</span>
+						</div>
+					</div>
+					<!-- Property 5 -->
+					<div class="property-card">
+						<img
+							src="https://dbijapkm3o6fj.cloudfront.net/resources/1573,1004,1,6,4,0,600,450/-4155-/20241203152409/beach-bungalow.jpeg"
+							alt="Modern House"
+						/>
+						<div class="property-info">
+							<h3>Seaside Bungalow</h3>
+							<p>
+								A 2-bedroom bungalow with stunning ocean views, private terrace,
+								and modern finishes.
+							</p>
+							<span class="price">$275,000</span>
+						</div>
+					</div>
+					<!-- Property 6 -->
+					<div class="property-card">
+						<img
+							src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/404200086.jpg?k=57e357ea9902d6ab4b8d593a36397f3dc6d7e974f520618f7fddedea1f5ad80b&o="
+							alt="Modern House"
+						/>
+						<div class="property-info">
+							<h3>Urban Loft</h3>
+							<p>
+								Contemporary 1-bedroom loft in the heart of downtown, ideal for
+								city living with sleek design.
+							</p>
+							<span class="price">$310,000</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== AFFILIATIONS SECTION ===== -->
+		<section class="affiliations">
+			<h2>Our Affiliations</h2>
+			<div class="aff-images">
+				<img
+					src="https://homeproject-eta.vercel.app/assets/partner4.webp"
+					alt="The Ridge Realty Group"
+				/>
+				<img
+					src="https://homeproject-eta.vercel.app/assets/partner3.webp"
+					alt="Equal Housing Opportunity"
+				/>
+				<img
+					src="https://homeproject-eta.vercel.app/assets/partner2.webp"
+					alt="Realtor"
+				/>
+				<img
+					src="https://homeproject-eta.vercel.app/assets/partner1.webp"
+					alt="Pahrump Valley Chamber of Commerce"
+				/>
+			</div>
+		</section>
+
+		<!-- ===== TESTIMONIALS SECTION ===== -->
+		<section class="testimonials-section" id="testimonials">
+			<h1>What Our Clients Say</h1>
+			<div class="testimonials-container">
+				<div class="testimonial-card">
+					<div class="testimonial-content">
+						<p>
+							“Working with Marci Metzger Home completely transformed our living
+							space. The attention to detail and elegance exceeded all
+							expectations.”
+						</p>
+					</div>
+					<div class="testimonial-author">
+						<img
+							src="https://randomuser.me/api/portraits/women/68.jpg"
+							alt="Client 1"
+						/>
+						<h3>Emily Johnson</h3>
+						<span>Interior Design Client</span>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<div class="testimonial-content">
+						<p>
+							“Every design element was perfectly curated. The team listened to
+							my ideas and made them even better!”
+						</p>
+					</div>
+					<div class="testimonial-author">
+						<img
+							src="https://randomuser.me/api/portraits/men/44.jpg"
+							alt="Client 2"
+						/>
+						<h3>Michael Lee</h3>
+						<span>Renovation Project</span>
+					</div>
+				</div>
+				<div class="testimonial-card">
+					<div class="testimonial-content">
+						<p>
+							“Professional, creative, and responsive. They turned our house
+							into a home that reflects who we are.”
+						</p>
+					</div>
+					<div class="testimonial-author">
+						<img
+							src="https://randomuser.me/api/portraits/women/52.jpg"
+							alt="Client 3"
+						/>
+						<h3>Sarah Thompson</h3>
+						<span>Homeowner</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== CONTACT SECTION ===== -->
+		<section class="contact-section" id="contact">
+			<h1>CONTACT US</h1>
+			<div class="contact-container">
+				<div class="contact-form">
+					<form action="#" method="POST">
+						<h2>Message Us</h2>
+						<input type="text" name="name" placeholder="Your Name" required />
+						<input
+							type="email"
+							name="email"
+							placeholder="Your Email"
+							required
+						/>
+						<input type="text" name="subject" placeholder="Subject" required />
+						<textarea
+							name="message"
+							rows="5"
+							placeholder="Your Message"
+							required
+						></textarea>
+						<button type="submit">Send Message</button>
+						<hr />
+						<table>
+							<tr>
+								<td>
+									<img
+										class="model-img"
+										src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/photo-5db79f9.jpg/:/cr=t:14.65%25,l:0%25,w:100%25,h:66.64%25/rs=w:365,h:365,cg:true"
+										alt="Marci Metzger"
+									/>
+								</td>
+								<td>
+									<div class="info">
+										<h2>MARCI METZGER</h2>
+										<p>REALTOR FOR NEARLY 3 DECADES!</p>
+										<a href="tel:+12069196886">206-919-6886</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<!-- CONTACT INFORMATION  -->
+				<div class="contact-card">
+					<h2>Contact Information</h2>
+					<p><strong>Marci Metzger - THE RIDGE REALTY GROUP</strong></p>
+					<p>
+						<strong>Address:</strong> 3190 HW-160, Suite F, Pahrump, Nevada
+						89048, United States
+					</p>
+					<p><strong>Phone:</strong> (206) 919-6886</p>
+					<p><strong>Email:</strong> marci.metzger@example.com</p>
+					<!-- MAPS  -->
+					<div class="contact-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19619.61713706125!2d-115.97158499999999!3d36.199892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c6398c31855555%3A0xca2c250302350734!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048!5e1!3m2!1sen!2sus!4v1761103356304!5m2!1sen!2sus"
+							loading="lazy"
+						></iframe>
+					</div>
+					<h3>Office Hours:</h3>
+					<p>Open today: 08:00 AM – 07:00 PM</p>
+					<p>Open daily: 08:00 AM – 07:00 PM</p>
+					<p>Appointments outside office hours available upon request.</p>
+					<a
+						href="https://www.whatsapp.com/"
+						target="_blank"
+						class="whatsapp-btn"
+					>
+						<i class="fab fa-whatsapp"></i>WHATSAPP
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== FOOTER SECTION ===== -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-logo">
+					<h3>Marci Metzger - Realtor</h3>
+				</div>
+				<p class="footer-tagline">
+					Your partner in finding the perfect property.
+				</p>
+				<p class="footer-copy">
+					© 2025 Marci Metzger Home. All rights reserved.
+				</p>
+				<ul class="footer-social">
+					<li>
+						<a href="https://www.facebook.com/MarciHomes/" target="_blank"
+							><i class="fab fa-facebook-f"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="_blank"
+							><i class="fab fa-instagram"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/" target="_blank"
+							><i class="fab fa-linkedin-in"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script src="src/script.js"></script>
+	</body>
+</html>
